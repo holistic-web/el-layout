@@ -1,5 +1,8 @@
 <template>
-	<b-button :variant="variant" v-bind="$attrs">
+	<b-button
+		class="ToolButton"
+		:variant="variant"
+		v-bind="$attrs">
 		<slot/>
 	</b-button>
 </template>
@@ -14,3 +17,9 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss">
+.ToolButton {
+	height: fit-content;
+}
+</style>

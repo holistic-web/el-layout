@@ -4,17 +4,21 @@
 
 			<!-- left partition -->
 			<b-navbar-nav class="ToolHeader__section">
-				<b-link class="ToolHeader__branding" href="https://holistic-toolbox.com">
-					<h2
-						class="ToolHeader__branding__text"
-						v-text="'Holistic Toolbox'"/>
-				</b-link>
-				<lottie-player :src="floatingNinjaAnimation" :options="animationOptions"/>
+				<slot name="left">
+					<b-link class="ToolHeader__branding" href="https://holistic-toolbox.com">
+						<h2
+							class="ToolHeader__branding__text"
+							v-text="'Holistic Web'"/>
+					</b-link>
+					<lottie-player :src="floatingNinjaAnimation" :options="animationOptions"/>
+				</slot>
 			</b-navbar-nav>
 
 			<!-- right partition-->
 			<b-navbar-nav class="ToolHeader__section ToolHeader__section--right">
-					<h1 class="ToolHeader__name" v-text="name"/>
+					<slot name="right">
+						<h1 class="ToolHeader__name" v-text="name"/>
+					</slot>
 			</b-navbar-nav>
 
 		</b-navbar>
@@ -30,7 +34,7 @@ export default {
 		LottiePlayer
 	},
 	props: {
-		name: { type: String, required: true }
+		name: { type: String }
 	},
 	data() {
 		return {

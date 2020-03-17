@@ -47,7 +47,7 @@ npm run build-bundle
 ```
 
 ### Publishing
-Publishing for this project is handled by our [Github workflow](/.github/workflows/publish-on-push-to-master) on merge into the master branch.
+Publishing for this project is handled by our [Github workflow](/.github/workflows/publish) on merge into the master branch.
 
 Manual publishing is not recommended but if we need to try the following (provided you are logged into npm and authorized):
 ```
@@ -55,9 +55,8 @@ npm publish --access public
 ```
 _Remember to increment the version number in package.json and package-lock.json._
 
-### Notes and Caveats
-- This project uses [storybook](https://storybook.js.org/) to provide visual documentation. This storybook deployment is released automatically by the `/.github/workflows/deploy-layout-stories` action.
+## Notes and Caveats
+- This project uses [storybook](https://storybook.js.org/) to provide visual documentation. This storybook deployment is released automatically by the `.github/workflows/deploy-stories` action.
 
 ## Roadmap
 - add breakpoints to the storybook examples
-- add a story that's an example of the (now fixed) scrolling bug

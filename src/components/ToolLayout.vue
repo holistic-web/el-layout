@@ -1,7 +1,9 @@
 <template>
 	<div class="ToolLayout">
 
-		<tool-header class="ToolLayout__header" :name="name"/>
+		<slot name="header">
+			<tool-header class="ToolLayout__header" :name="name"/>
+		</slot>
 
 		<section class="ToolLayout__tool">
 			<slot/>
