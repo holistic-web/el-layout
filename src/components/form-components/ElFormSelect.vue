@@ -1,5 +1,5 @@
 <template>
-	<b-form-input
+	<b-form-select
 	:value="value"
 	:options="options"
 	@input="update($event.target.value)" />
