@@ -1,10 +1,10 @@
 <template>
-	<b-button
+	<b-btn
 		class="ElButton"
 		:variant="variant"
 		v-bind="$attrs">
 		<slot/>
-	</b-button>
+	</template>
 </template>
 
 <script>
