@@ -13,7 +13,7 @@ import ElTaskbar from './components/ElTaskbar.vue';
 
 Vue.use(BootstrapVue);
 Vue.use(scrollTo, {
-	container: '.ToolWrapper',
+	container: '.ElWrapper',
 	duration: 300
 });
 

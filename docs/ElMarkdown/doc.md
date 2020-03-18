@@ -8,5 +8,5 @@ This component has a very simple interface, as it's only functionality is to ren
 
 ## Example
 ```html
-<tool-markdown :markdown="markdownString"/>
+<el-markdown :markdown="markdownString"/>
 ```

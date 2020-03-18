@@ -9,7 +9,7 @@
 				:baseUrl="baseUrl"/>
 		</slot>
 
-		<section class="ElLayout__tool">
+		<section class="ElLayout__wrapper">
 			<slot>Hello World!</slot>
 		</section>
 
@@ -44,7 +44,7 @@ export default {
 		flex-grow: 0;
 	}
 
-	&__tool {
+	&__wrapper {
 		flex-grow: 1;
 		overflow: auto;
 

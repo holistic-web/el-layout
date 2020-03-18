@@ -21,7 +21,7 @@ export const Default = () => ({
 	methods: { onChange: action('updated') },
 	template: `
 		<el-layout name="Demo">
-			<tool-markdown :markdown="markdown"/>
+			<el-markdown :markdown="markdown"/>
 		</el-layout>
 	`
 });
