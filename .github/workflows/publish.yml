@@ -40,9 +40,13 @@ jobs:
         npm ci
         npm run build-bundle --if-present
 
-    - name: Increment project version
+    - name: Configure git credentials
       run: |
-        npm version patch
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Increment project version
+      run: npm version patch
 
     - name: Publish project
       run: |
@@ -52,8 +56,6 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
         git commit -m "CI: release new el-layout version." -a
         git pull
         git push
