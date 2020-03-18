@@ -4,7 +4,7 @@
 		:variant="variant"
 		v-bind="$attrs">
 		<slot/>
-	</template>
+	</b-btn>
 </template>
 
 <script>
