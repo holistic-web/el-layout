@@ -13,14 +13,14 @@ export default {
 	parameters: { notes: { markdown: Doc } }
 };
 
-export const Default = () => ({
+export const Standard = () => ({
 	components: { ElMarkdown, ElLayout },
 	props: {
 		markdown: { default: text('markdown', exampleMarkdown) }
 	},
 	methods: { onChange: action('updated') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElMarkdown" subtitle="Standard">
 			<el-markdown :markdown="markdown"/>
 		</el-layout>
 	`

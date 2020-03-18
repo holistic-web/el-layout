@@ -1,7 +1,7 @@
 {
 	"hosting": {
 		"public": "storybook-static",
-		"site": "layout-stories",
+		"site": "el-layout-stories",
 		"ignore": [
 			"firebase.json",
 			"**/.*",

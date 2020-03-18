@@ -2,12 +2,12 @@
 This is a shared [Vue.js](https://vuejs.org) component library for use in the in all holistic-web projects. [Boostrap Vue](https://bootstrap-vue.js.org/) is used to drive the core of the functionality.
 
 ## Factsheet
-| **Category**     | **Value**                               |
-|------------------|-----------------------------------------|
-| **Project Type** | Component Library                       |
-| **Package Name** | @holistic-web/layout                    |
-| **Demo URL**     | https://holistic-layout-stories.web.app |
-| **Dependencies** | Bootstrap Vue, Firebase, Vue-ScrollTo   |
+| **Category**         | **Value**                               |
+|----------------------|-----------------------------------------|
+| **Project Type**     | Component Library                       |
+| **Package Name**     | @holistic-web/el-layout                 |
+| **Demo URL**         | https://el-layout-stories.web.app       |
+| **Key Dependencies** | Bootstrap Vue                           |
 
 ## Usage
 To use this library in a Vue app, simply include:
@@ -59,5 +59,7 @@ _Remember to increment the version number in package.json and package-lock.json.
 - This project uses [storybook](https://storybook.js.org/) to provide visual documentation. This storybook deployment is released automatically by the `.github/workflows/deploy-stories` action.
 
 ## Roadmap
+- upgrade to latest storybook
+- resolve "withNotes" is deprecated console error and markdown errors
 - add breakpoints to the storybook examples
 - allow override of theme colours

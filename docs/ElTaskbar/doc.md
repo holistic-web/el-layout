@@ -4,9 +4,9 @@ Use this component to provide a constient UI and UX for executing an action.
 Simply next the content you wish to put in the taskbar inside its `<slot/>`.
 
 ## Slots
-| **name**    | **description** | **default content** |
-|-------------|-----------------|---------------------|
-| **default** | taskbar content | `'Hello World!'`    |
+| **name**      | **description** | **default content** |
+|---------------|-----------------|---------------------|
+| **`default`** | taskbar content | `'Hello World!'`    |
 
 ## Example
 ```html

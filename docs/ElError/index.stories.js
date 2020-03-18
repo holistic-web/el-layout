@@ -20,7 +20,7 @@ export const Standard = () => ({
 	},
 	methods: { onChange: action('updated') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElError" subtitle="Standard">
 			<el-error :message="message"/>
 		</el-layout>
 	`
