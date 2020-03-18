@@ -39,18 +39,15 @@ jobs:
 
     - name: Build project
       run: |
-        cd layout
         npm ci
         npm run build-bundle --if-present
 
     - name: Increment project version
       run: |
-        cd layout
         npm version patch
 
     - name: Publish project
       run: |
-        cd layout
         echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
         npm publish --access public
         rm .npmrc
