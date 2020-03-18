@@ -59,6 +59,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "CI: release new toolbox-layout version." -a
+        git commit -m "CI: release new el-layout version." -a
         git pull
         git push
