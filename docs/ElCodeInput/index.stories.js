@@ -21,7 +21,7 @@ export const Standard = () => ({
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElCodeInput" subtitle="Standard">
 			<el-code-input
 				v-model="value"
 				@input="onInput"/>
@@ -46,7 +46,7 @@ export const JSON = () => ({
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElCodeInput" subtitle="JSON">
 			<el-code-input
 				v-model="value"
 				:options="options"
@@ -65,7 +65,7 @@ export const AutoSize = () => ({
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElCodeInput" subtitle="Auto Size">
 			<el-code-input
 				v-model="value"
 				:autoSize="autoSize"

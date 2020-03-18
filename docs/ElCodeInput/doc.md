@@ -4,16 +4,16 @@ Use this component wherever we have a large programmatic text field. It provides
 This component is powered by vue-codemirror.
 
 ## Props
-| **name** | type      | default           | description         |
-|----------|-----------|-------------------|---------------------|
-| autoSize | `Boolean` | `false`           | grow with content   |
-| options  | `Object`  | `{}`              | codemirror settings |
-| value    | `String`  | **required**      | the input's value   |
+| **name**   | type      | default           | description         |
+|------------|-----------|-------------------|---------------------|
+| `autoSize` | `Boolean` | `false`           | grow with content   |
+| `options`  | `Object`  | `{}`              | codemirror settings |
+| `value`    | `String`  | **required**      | the input's value   |
 
 ## Events
 | **name** | **paylod** | **description**           |
 |----------|------------|---------------------------|
-| input     | `value`   | when the value is updated |
+| `input`  | `value`   | when the value is updated |
 
 ## Example
 ```html

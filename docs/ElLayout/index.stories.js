@@ -15,12 +15,13 @@ export default {
 export const Standard = () => ({
 	components: { ElLayout },
 	props: {
-		content: { default: text('content', 'Check out this ElLayout component!') },
-		name: { default: text('name', 'Demo') }
+		title: { default: text('title', 'ElLayout') },
+		subtitle: { default: text('subtitle', 'Standard') },
+		content: { default: text('content', 'Check out this ElLayout component!') }
 	},
 	methods: { onChange: action('updated') },
 	template: `
-		<el-layout title="Demo">
+		<el-layout title="title" :subtitle="subtitle">
 			{{ content }}
 		</el-layout>
 	`

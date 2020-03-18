@@ -16,7 +16,7 @@ export default {
 export const Default = () => ({
 	components: { ElTaskbar, ElLayout },
 	template: `
-		<el-layout name="Demo">
+		<el-layout class="ElTaskbarStory" title="ElTaskbar" subtitle="Standard">
 			<el-taskbar>
 				<p>Simple taskbar content.</p>
 			</el-taskbar>
@@ -32,7 +32,7 @@ export const withButtons = () => ({
 		resetButtonClick: action('resetButtonClick')
 	},
 	template: `
-		<el-layout name="Demo">
+		<el-layout class="ElTaskbarStory" title="ElTaskbar" subtitle="With Buttons">
 			<el-taskbar>
 				<el-button
 					class="ml-3"

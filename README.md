@@ -59,5 +59,7 @@ _Remember to increment the version number in package.json and package-lock.json.
 - This project uses [storybook](https://storybook.js.org/) to provide visual documentation. This storybook deployment is released automatically by the `.github/workflows/deploy-stories` action.
 
 ## Roadmap
+- upgrade to latest storybook
+- resolve "withNotes" is deprecated console error and markdown errors
 - add breakpoints to the storybook examples
 - allow override of theme colours

@@ -22,7 +22,7 @@ export const Standard = () => ({
 	},
 	methods: { action: action('clicked') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElButton" subtitle="Standard">
 			<el-button
 				v-text="text"
 				@click.native="action"/>
@@ -45,7 +45,7 @@ export const Secondary = () => ({
 	},
 	methods: { action: action('clicked') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElButton" subtitle="Secondary">
 			<el-button
 				v-text="text"
 				:size="size"
@@ -64,7 +64,7 @@ export const LinkToNewTab = () => ({
 	},
 	methods: { action: action('clicked') },
 	template: `
-		<el-layout name="Demo">
+		<el-layout title="ElButton" subtitle="Link To New Tab">
 			<el-button
 				v-text="text"
 				:href="href"
