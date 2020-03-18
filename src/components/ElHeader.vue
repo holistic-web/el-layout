@@ -31,15 +31,6 @@ export default {
 		title: { type: String, default: 'Welcome' },
 		subtitle: { type: String },
 		baseUrl: { type: String, default: '/' }
-	},
-	data() {
-		return {
-			animationOptions: {
-				autoplay: true,
-				loop: true,
-				width: '55px'
-			}
-		};
 	}
 };
 </script>
