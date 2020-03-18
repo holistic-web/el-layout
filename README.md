@@ -2,12 +2,12 @@
 This is a shared [Vue.js](https://vuejs.org) component library for use in the in all holistic-web projects. [Boostrap Vue](https://bootstrap-vue.js.org/) is used to drive the core of the functionality.
 
 ## Factsheet
-| **Category**     | **Value**                               |
-|------------------|-----------------------------------------|
-| **Project Type** | Component Library                       |
-| **Package Name** | @holistic-web/layout                    |
-| **Demo URL**     | https://holistic-layout-stories.web.app |
-| **Dependencies** | Bootstrap Vue, Firebase, Vue-ScrollTo   |
+| **Category**         | **Value**                               |
+|----------------------|-----------------------------------------|
+| **Project Type**     | Component Library                       |
+| **Package Name**     | @holistic-web/el-layout                 |
+| **Demo URL**         | https://el-layout-stories.web.app       |
+| **Key Dependencies** | Bootstrap Vue                           |
 
 ## Usage
 To use this library in a Vue app, simply include:
