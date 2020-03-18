@@ -3,13 +3,13 @@ import './styles/theme.scss';
 import BootstrapVue from 'bootstrap-vue';
 import scrollTo from 'vue-scrollto';
 
-import ToolButton from './components/ToolButton.vue';
-import ToolCode from './components/ToolCode.vue';
-import ToolError from './components/ToolError.vue';
-import ToolHeader from './components/ToolHeader.vue';
-import ToolLayout from './components/ToolLayout.vue';
-import ToolMarkdown from './components/ToolMarkdown.vue';
-import ToolTaskbar from './components/ToolTaskbar.vue';
+import ElButton from './components/ElButton.vue';
+import ElCodeInput from './components/ElCodeInput.vue';
+import ElError from './components/ElError.vue';
+import ElHeader from './components/ElHeader.vue';
+import ElLayout from './components/ElLayout.vue';
+import ElMarkdown from './components/ElMarkdown.vue';
+import ElTaskbar from './components/ElTaskbar.vue';
 
 Vue.use(BootstrapVue);
 Vue.use(scrollTo, {
@@ -18,13 +18,13 @@ Vue.use(scrollTo, {
 });
 
 const components = {
-	ToolButton,
-	ToolCode,
-	ToolError,
-	ToolHeader,
-	ToolLayout,
-	ToolMarkdown,
-	ToolTaskbar
+	ElButton,
+	ElCodeInput,
+	ElError,
+	ElHeader,
+	ElLayout,
+	ElMarkdown,
+	ElTaskbar
 };
 
 export default function install($Vue) {
@@ -34,11 +34,11 @@ export default function install($Vue) {
 }
 
 export {
-	ToolButton,
-	ToolCode,
-	ToolError,
-	ToolHeader,
-	ToolLayout,
-	ToolMarkdown,
-	ToolTaskbar
+	ElButton,
+	ElCodeInput,
+	ElError,
+	ElHeader,
+	ElLayout,
+	ElMarkdown,
+	ElTaskbar
 };

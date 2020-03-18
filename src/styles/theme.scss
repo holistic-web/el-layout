@@ -37,13 +37,13 @@ h1, h2, h3, h4, h5 {
 }
 
 /** Variables **/
-$tool-padding-mobile: 1rem;
-$tool-padding-tablet: 1.5rem;
-$tool-padding-desktop: 2rem;
+$el-padding-mobile: 1rem;
+$el-padding-tablet: 1.5rem;
+$el-padding-desktop: 2rem;
 
-$tool-border-radius: 10px;
-$tool-text-large: 20px;
-$tool-text-larger: 24px;
+$el-border-radius: 10px;
+$el-text-large: 20px;
+$el-text-larger: 24px;
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1200px;
@@ -51,10 +51,10 @@ $breakpoint-desktop: 1200px;
 @import './bootstrap-overrides';
 
 /** Helper Classes **/
-.ToolWrapper {
+.ElWrapper {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	padding: $tool-padding-desktop;
+	padding: $el-padding-desktop;
 	overflow: auto;
 }

@@ -1,5 +1,5 @@
 <template>
-	<div class="ToolError" v-text="message"/>
+	<div class="ElError" v-text="message"/>
 </template>
 
 <script>
@@ -16,10 +16,11 @@ export default {
 <style lang="scss">
 @import '../styles/theme';
 
-.ToolError {
+.ElError {
 	background-color: $danger;
 	color: $light;
 	padding: 1rem;
-	border-radius: $tool-border-radius;
+	border-radius: $el-border-radius;
+	height: fit-content;
 }
 </style>

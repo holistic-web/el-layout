@@ -1,4 +1,4 @@
-# Layout
+# El Layout
 This is a shared [Vue.js](https://vuejs.org) component library for use in the in all holistic-web projects. [Boostrap Vue](https://bootstrap-vue.js.org/) is used to drive the core of the functionality.
 
 ## Factsheet
@@ -60,3 +60,4 @@ _Remember to increment the version number in package.json and package-lock.json.
 
 ## Roadmap
 - add breakpoints to the storybook examples
+- allow override of theme colours

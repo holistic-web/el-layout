@@ -1,5 +1,5 @@
 <template>
-	<section class="ToolTaskbar">
+	<section class="ElTaskbar">
 		<slot/>
 	</section>
 </template>s
@@ -7,7 +7,7 @@
 <style lang="scss">
 @import '../styles/theme';
 
-.ToolTaskbar {
+.ElTaskbar {
 	background-color: $dark;
 	width: 100%;
 	z-index: 10;
@@ -15,13 +15,13 @@
 	flex-direction: row-reverse;
 	align-items: center;
 	border-top: 2px solid $primary;
-	padding: ($tool-padding-mobile / 2) $tool-padding-mobile;
+	padding: ($el-padding-mobile / 2) $el-padding-mobile;
 
 	@media all and (min-width: $breakpoint-tablet) {
-		padding: ($tool-padding-tablet / 2) $tool-padding-tablet;
+		padding: ($el-padding-tablet / 2) $el-padding-tablet;
 	}
 	@media all and (min-width: $breakpoint-desktop) {
-		padding: ($tool-padding-desktop / 2) $tool-padding-desktop;
+		padding: ($el-padding-desktop / 2) $el-padding-desktop;
 	}
 }
 </style>

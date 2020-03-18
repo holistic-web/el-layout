@@ -1,25 +1,31 @@
 <template>
-	<div class="ToolLayout">
+	<div class="ElLayout">
 
 		<slot name="header">
-			<tool-header class="ToolLayout__header" :name="name"/>
+			<el-header
+				class="ElLayout__header"
+				:title="title"
+				:subtitle="subtitle"
+				:baseUrl="baseUrl"/>
 		</slot>
 
-		<section class="ToolLayout__tool">
-			<slot/>
+		<section class="ElLayout__tool">
+			<slot>Hello World!</slot>
 		</section>
 
 	</div>
 </template>
 <script>
-import ToolHeader from './ToolHeader.vue';
+import ElHeader from './ElHeader.vue';
 
 export default {
 	props: {
-		name: { type: String, required: true }
+		title: { type: String },
+		subtitle: { type: String },
+		baseUrl: { type: String, default: '/' }
 	},
 	components: {
-		ToolHeader
+		ElHeader
 	}
 };
 </script>
@@ -27,7 +33,7 @@ export default {
 <style lang="scss">
 @import '../styles/theme';
 
-.ToolLayout {
+.ElLayout {
 	background-color: $background;
 	display: flex;
 	flex-direction: column;

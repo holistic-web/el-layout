@@ -1,35 +1,36 @@
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withNotes } from '@storybook/addon-notes';
-import ToolLayout from '../../src/components/ToolLayout.vue';
-import ToolCode from '../../src/components/ToolCode.vue';
+import ElLayout from '../../src/components/ElLayout.vue';
+import ElCodeInput from '../../src/components/ElCodeInput.vue';
 import Doc from './doc.md';
 import jsonString from './jsonString';
 
 export default {
-	title: 'ToolCode',
-	component: ToolCode,
+	title: 'ElCodeInput',
+	component: ElCodeInput,
 	decorators: [withNotes, withKnobs],
 	parameters: { notes: { markdown: Doc } }
 };
 
-export const Default = () => ({
-	components: { ToolCode, ToolLayout },
+// Keep standard story in sync with example in the readme!
+export const Standard = () => ({
+	components: { ElCodeInput, ElLayout },
 	data() {
-		return { value: 'Check out this ToolCode component!' };
+		return { value: 'Check out this ElCodeInput component!' };
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-code
+		<el-layout name="Demo">
+			<el-code-input
 				v-model="value"
 				@input="onInput"/>
-		</tool-layout>
+		</el-layout>
 	`
 });
 
 export const JSON = () => ({
-	components: { ToolCode, ToolLayout },
+	components: { ElCodeInput, ElLayout },
 	props: {
 		lineNumbers: { default: boolean('options.lineNumbers', true) },
 		mode: { default: text('options.mode', 'JSON') }
@@ -45,30 +46,30 @@ export const JSON = () => ({
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-code
+		<el-layout name="Demo">
+			<el-code-input
 				v-model="value"
 				:options="options"
 				@input="onInput"/>
-		</tool-layout>
+		</el-layout>
 	`
 });
 
 export const AutoSize = () => ({
-	components: { ToolCode, ToolLayout },
+	components: { ElCodeInput, ElLayout },
 	props: {
 		autoSize: { default: boolean('autoSize', true) }
 	},
 	data() {
-		return { value: 'Check out this ToolCode component!' };
+		return { value: 'Check out this ElCodeInput component!' };
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-code
+		<el-layout name="Demo">
+			<el-code-input
 				v-model="value"
 				:autoSize="autoSize"
 				@input="onInput"/>
-		</tool-layout>
+		</el-layout>
 	`
 });

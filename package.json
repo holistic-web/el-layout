@@ -1,10 +1,10 @@
 {
-	"name": "@holistic-web/layout",
-	"description": "A Vue.js component library for the Holistic Toolbox",
+	"name": "@holistic-web/el-layout",
+	"description": "A Vue.js component library for the Holistic Web",
 	"version": "0.0.1",
-	"main": "./dist/layout.common.js",
+	"main": "./dist/el-layout.common.js",
 	"scripts": {
-		"build-bundle": "vue-cli-service build --target lib --name layout ./src/index.js",
+		"build-bundle": "vue-cli-service build --target lib --name el-layout ./src/index.js",
 		"lint": "vue-cli-service lint",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
@@ -21,7 +21,6 @@
 		"bootstrap-vue": "^2.1.0",
 		"codemirror": "^5.50.2",
 		"core-js": "^3.4.4",
-		"lottie-player-vue": "0.0.12",
 		"marked": "^0.8.0",
 		"vue": "^2.6.11",
 		"vue-codemirror": "^4.0.6",

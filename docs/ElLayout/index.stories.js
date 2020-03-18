@@ -1,26 +1,29 @@
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withNotes } from '@storybook/addon-notes';
-import ToolLayout from '../../src/components/ToolLayout.vue';
+import ElLayout from '../../src/components/ElLayout.vue';
 import Doc from './doc.md';
 
 export default {
-	title: 'ToolLayout',
-	component: ToolLayout,
+	title: 'ElLayout',
+	component: ElLayout,
 	decorators: [withNotes, withKnobs],
 	parameters: { notes: { markdown: Doc } }
 };
 
-export const Default = () => ({
-	components: { ToolLayout },
+// Keep standard story in sync with example in the readme!
+export const Standard = () => ({
+	components: { ElLayout },
 	props: {
-		content: { default: text('content', 'Check out this ToolLayout component!') },
+		content: { default: text('content', 'Check out this ElLayout component!') },
 		name: { default: text('name', 'Demo') }
 	},
 	methods: { onChange: action('updated') },
 	template: `
-		<tool-layout name="Demo">
+		<el-layout title="Demo">
 			{{ content }}
-		</tool-layout>
+		</el-layout>
 	`
 });
+
+// #TODO: add usage with taskbar

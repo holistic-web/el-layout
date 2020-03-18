@@ -1,8 +1,9 @@
 @import '../src/styles/theme.scss';
 
-.ToolLayout__tool {
+.ElLayout__tool {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Fira Code', monospace;
+	padding: $el-padding-desktop
 }

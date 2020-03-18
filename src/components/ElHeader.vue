@@ -1,23 +1,22 @@
 <template>
-	<header class="ToolHeader">
-		<b-navbar class="ToolHeader__navbar">
+	<header class="ElHeader">
+		<b-navbar class="ElHeader__navbar">
 
 			<!-- left partition -->
-			<b-navbar-nav class="ToolHeader__section">
+			<b-navbar-nav class="ElHeader__section">
 				<slot name="left">
-					<b-link class="ToolHeader__branding" href="https://holistic-toolbox.com">
+					<b-link class="ElHeader__branding" :href="baseUrl">
 						<h2
-							class="ToolHeader__branding__text"
-							v-text="'Holistic Web'"/>
+							class="ElHeader__branding__text"
+							v-text="title"/>
 					</b-link>
-					<lottie-player :src="floatingNinjaAnimation" :options="animationOptions"/>
 				</slot>
 			</b-navbar-nav>
 
 			<!-- right partition-->
-			<b-navbar-nav class="ToolHeader__section ToolHeader__section--right">
+			<b-navbar-nav class="ElHeader__section ElHeader__section--right">
 					<slot name="right">
-						<h1 class="ToolHeader__name" v-text="name"/>
+						<h1 class="ElHeader__subTitle" v-text="subtitle"/>
 					</slot>
 			</b-navbar-nav>
 
@@ -26,19 +25,15 @@
 </template>
 
 <script>
-import { LottiePlayer } from 'lottie-player-vue';
-import floatingNinjaAnimation from '../assets/animations/floating-ninja.json';
 
 export default {
-	components: {
-		LottiePlayer
-	},
 	props: {
-		name: { type: String }
+		title: { type: String, default: 'Welcome' },
+		subtitle: { type: String },
+		baseUrl: { type: String, default: '/' }
 	},
 	data() {
 		return {
-			floatingNinjaAnimation,
 			animationOptions: {
 				autoplay: true,
 				loop: true,
@@ -52,15 +47,15 @@ export default {
 <style lang="scss">
 @import '../styles/theme';
 
-.ToolHeader {
+.ElHeader {
 	background-color: $dark;
-	padding: ($tool-padding-mobile / 2) $tool-padding-mobile;
+	padding: ($el-padding-mobile / 2) $el-padding-mobile;
 
 	@media all and (min-width: $breakpoint-tablet) {
-		padding: ($tool-padding-tablet / 2) $tool-padding-tablet;
+		padding: ($el-padding-tablet / 2) $el-padding-tablet;
 	}
 	@media all and (min-width: $breakpoint-desktop) {
-		padding: ($tool-padding-desktop / 2) $tool-padding-desktop;
+		padding: ($el-padding-desktop / 2) $el-padding-desktop;
 	}
 
 	&__navbar {
@@ -92,7 +87,7 @@ export default {
 		}
 
 		&__text {
-			font-size: $tool-text-large;
+			font-size: $el-text-large;
 			font-weight: lighter;
 			letter-spacing: 1.5px;
 			text-transform: uppercase;
@@ -101,9 +96,9 @@ export default {
 	}
 
 
-	&__name {
+	&__subTitle {
 		color: $highlight;
-		font-size: $tool-text-larger;
+		font-size: $el-text-larger;
 	}
 }
 

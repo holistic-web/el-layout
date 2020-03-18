@@ -1,19 +1,20 @@
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withNotes } from '@storybook/addon-notes';
-import ToolLayout from '../../src/components/ToolLayout.vue';
-import ToolButton from '../../src/components/ToolButton.vue';
+import ElLayout from '../../src/components/ElLayout.vue';
+import ElButton from '../../src/components/ElButton.vue';
 import Doc from './doc.md';
 
 export default {
-	title: 'ToolButton',
-	component: ToolButton,
+	title: 'ElButton',
+	component: ElButton,
 	decorators: [withNotes, withKnobs],
 	parameters: { notes: { markdown: Doc } }
 };
 
-export const Default = () => ({
-	components: { ToolButton, ToolLayout },
+// Keep standard story in sync with example in the readme!
+export const Standard = () => ({
+	components: { ElButton, ElLayout },
 	props: {
 		text: {
 			default: text('text', 'Demo Button')
@@ -21,16 +22,16 @@ export const Default = () => ({
 	},
 	methods: { action: action('clicked') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-button
+		<el-layout name="Demo">
+			<el-button
 				v-text="text"
 				@click.native="action"/>
-		</tool-layout>
+		</el-layout>
 	`
 });
 
 export const Secondary = () => ({
-	components: { ToolButton, ToolLayout },
+	components: { ElButton, ElLayout },
 	props: {
 		text: {
 			default: text('text', 'Demo Button')
@@ -44,18 +45,18 @@ export const Secondary = () => ({
 	},
 	methods: { action: action('clicked') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-button
+		<el-layout name="Demo">
+			<el-button
 				v-text="text"
 				:size="size"
 				:variant="variant"
 				@click.native="action"/>
-		</tool-layout>
+		</el-layout>
 	`
 });
 
 export const LinkToNewTab = () => ({
-	components: { ToolButton, ToolLayout },
+	components: { ElButton, ElLayout },
 	props: {
 		text: { default: text('text', 'Demo Button') },
 		href: { default: text('href', 'http://google.com') },
@@ -63,12 +64,12 @@ export const LinkToNewTab = () => ({
 	},
 	methods: { action: action('clicked') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-button
+		<el-layout name="Demo">
+			<el-button
 				v-text="text"
 				:href="href"
 				:target="target"
 				@click.native="action"/>
-		</tool-layout>
+		</el-layout>
 	`
 });

@@ -1,5 +1,5 @@
 <template>
-	<section class="ToolMarkdown" v-html="renderedMarkdown"/>
+	<section class="ElMarkdown" v-html="renderedMarkdown"/>
 </template>
 
 <script>
@@ -39,7 +39,7 @@ export default {
 <style lang="scss">
 @import '../styles/theme';
 
-.ToolMarkdown {
+.ElMarkdown {
 	pre code {
 		color: $primary;
 	}

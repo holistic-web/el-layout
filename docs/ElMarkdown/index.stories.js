@@ -1,27 +1,27 @@
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withNotes } from '@storybook/addon-notes';
-import ToolLayout from '../../src/components/ToolLayout.vue';
-import ToolMarkdown from '../../src/components/ToolMarkdown.vue';
+import ElLayout from '../../src/components/ElLayout.vue';
+import ElMarkdown from '../../src/components/ElMarkdown.vue';
 import Doc from './doc.md';
 import exampleMarkdown from './example.md';
 
 export default {
-	title: 'ToolMarkdown',
-	component: ToolMarkdown,
+	title: 'ElMarkdown',
+	component: ElMarkdown,
 	decorators: [withNotes, withKnobs],
 	parameters: { notes: { markdown: Doc } }
 };
 
 export const Default = () => ({
-	components: { ToolMarkdown, ToolLayout },
+	components: { ElMarkdown, ElLayout },
 	props: {
 		markdown: { default: text('markdown', exampleMarkdown) }
 	},
 	methods: { onChange: action('updated') },
 	template: `
-		<tool-layout name="Demo">
+		<el-layout name="Demo">
 			<tool-markdown :markdown="markdown"/>
-		</tool-layout>
+		</el-layout>
 	`
 });

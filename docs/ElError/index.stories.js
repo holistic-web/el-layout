@@ -1,26 +1,27 @@
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withNotes } from '@storybook/addon-notes';
-import ToolLayout from '../../src/components/ToolLayout.vue';
-import ToolError from '../../src/components/ToolError.vue';
+import ElLayout from '../../src/components/ElLayout.vue';
+import ElError from '../../src/components/ElError.vue';
 import Doc from './doc.md';
 
 export default {
-	title: 'ToolError',
-	component: ToolError,
+	title: 'ElError',
+	component: ElError,
 	decorators: [withNotes, withKnobs],
 	parameters: { notes: { markdown: Doc } }
 };
 
-export const Default = () => ({
-	components: { ToolError, ToolLayout },
+// Keep standard story in sync with example in the readme!
+export const Standard = () => ({
+	components: { ElError, ElLayout },
 	props: {
 		message: { default: text('message', 'Failed to add user.') }
 	},
 	methods: { onChange: action('updated') },
 	template: `
-		<tool-layout name="Demo">
-			<tool-error :message="message"/>
-		</tool-layout>
+		<el-layout name="Demo">
+			<el-error :message="message"/>
+		</el-layout>
 	`
 });
