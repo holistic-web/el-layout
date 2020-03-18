@@ -1,8 +1,7 @@
 <template>
 	<b-form-select
 	:value="value"
-	:options="options"
-	@input="update($event.target.value)" />
+	:options="options" />
 </template>
 
 <script>
@@ -18,11 +17,6 @@ export default {
 		options: {
 			type: Array,
 			required: true
-		}
-	},
-	methods: {
-		update(data) {
-			this.$emit('input', data);
 		}
 	}
 };
