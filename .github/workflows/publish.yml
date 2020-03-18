@@ -54,8 +54,5 @@ jobs:
         npm publish --access public
         rm .npmrc
 
-    - name: Commit and push changes
-      run: |
-        git commit -m "CI: release new el-layout version." -a
-        git pull
-        git push
+    - name: Push changes
+      run: git push
