@@ -10,7 +10,7 @@ import ElHeader from './components/ElHeader.vue';
 import ElInputCode from './components/ElInputCode.vue';
 import ElInputSelect from './components/ElInputSelect.vue';
 import ElInputText from './components/ElInputText.vue';
-import ElInputTextArea from './components/ElInputTextArea.vue';
+import ElInputTextarea from './components/ElInputTextarea.vue';
 import ElLayout from './components/ElLayout.vue';
 import ElMarkdown from './components/ElMarkdown.vue';
 import ElTaskbar from './components/ElTaskbar.vue';
@@ -29,15 +29,11 @@ const components = {
 	ElInputCode,
 	ElInputSelect,
 	ElInputText,
-	ElInputTextArea,
+	ElInputTextarea,
 	ElLayout,
 	ElMarkdown,
 	ElTaskbar,
-	ElInputCode,
-	ElForm,
-	ElSelectInput,
-	ElTextAreaInput,
-	ElTextInput
+	ElForm
 };
 
 export default function install($Vue) {
