@@ -1,4 +1,4 @@
-# ElCodeInput
+# ElInputCode
 Use this component wherever we have a large programmatic text field. It provides some standard formatting and allows us to use the tab character in our inputs.
 
 This component is powered by vue-codemirror.
@@ -17,7 +17,7 @@ This component is powered by vue-codemirror.
 
 ## Example
 ```html
-<el-code-input
+<el-input-code
 	v-model="value"
 	@input="onInput"/>
 ```

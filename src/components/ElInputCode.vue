@@ -1,8 +1,8 @@
 <template>
 	<codemirror
-		ref="ElCodeInput"
-		class="ElCodeInput"
-		:class="{ 'ElCodeInput--autoSize': autoSize }"
+		ref="ElInputCode"
+		class="ElInputCode"
+		:class="{ 'ElInputCode--autoSize': autoSize }"
 		:value="value"
 		:options="optionsWithDefaults"
 		@input="onInput"/>
@@ -43,7 +43,7 @@ export default {
 			};
 		},
 		codemirror() {
-			return this.$refs.ElCodeInput.codemirror;
+			return this.$refs.ElInputCode.codemirror;
 		}
 	},
 	methods: {
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss">
-.ElCodeInput {
+.ElInputCode {
 	width: 100%;
 
 	&--autoSize {

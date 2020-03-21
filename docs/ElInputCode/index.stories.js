@@ -2,27 +2,27 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withNotes } from '@storybook/addon-notes';
 import ElLayout from '../../src/components/ElLayout.vue';
-import ElCodeInput from '../../src/components/ElCodeInput.vue';
+import ElInputCode from '../../src/components/ElInputCode.vue';
 import Doc from './doc.md';
 import jsonString from './jsonString';
 
 export default {
-	title: 'ElCodeInput',
-	component: ElCodeInput,
+	title: 'ElInputCode',
+	component: ElInputCode,
 	decorators: [withNotes, withKnobs],
 	parameters: { notes: { markdown: Doc } }
 };
 
 // Keep standard story in sync with example in the readme!
 export const Standard = () => ({
-	components: { ElCodeInput, ElLayout },
+	components: { ElInputCode, ElLayout },
 	data() {
-		return { value: 'Check out this ElCodeInput component!' };
+		return { value: 'Check out this ElInputCode component!' };
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<el-layout title="ElCodeInput" subtitle="Standard">
-			<el-code-input
+		<el-layout title="ElInputCode" subtitle="Standard">
+			<el-input-code
 				v-model="value"
 				@input="onInput"/>
 		</el-layout>
@@ -30,7 +30,7 @@ export const Standard = () => ({
 });
 
 export const JSON = () => ({
-	components: { ElCodeInput, ElLayout },
+	components: { ElInputCode, ElLayout },
 	props: {
 		lineNumbers: { default: boolean('options.lineNumbers', true) },
 		mode: { default: text('options.mode', 'JSON') }
@@ -46,8 +46,8 @@ export const JSON = () => ({
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<el-layout title="ElCodeInput" subtitle="JSON">
-			<el-code-input
+		<el-layout title="ElInputCode" subtitle="JSON">
+			<el-input-code
 				v-model="value"
 				:options="options"
 				@input="onInput"/>
@@ -56,17 +56,17 @@ export const JSON = () => ({
 });
 
 export const AutoSize = () => ({
-	components: { ElCodeInput, ElLayout },
+	components: { ElInputCode, ElLayout },
 	props: {
 		autoSize: { default: boolean('autoSize', true) }
 	},
 	data() {
-		return { value: 'Check out this ElCodeInput component!' };
+		return { value: 'Check out this ElInputCode component!' };
 	},
 	methods: { onInput: action('input') },
 	template: `
-		<el-layout title="ElCodeInput" subtitle="Auto Size">
-			<el-code-input
+		<el-layout title="ElInputCode" subtitle="Auto Size">
+			<el-input-code
 				v-model="value"
 				:autoSize="autoSize"
 				@input="onInput"/>
