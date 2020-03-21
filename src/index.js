@@ -32,8 +32,7 @@ const components = {
 	ElInputTextarea,
 	ElLayout,
 	ElMarkdown,
-	ElTaskbar,
-	ElForm
+	ElTaskbar
 };
 
 export default function install($Vue) {
