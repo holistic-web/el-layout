@@ -1,7 +1,7 @@
 <template>
 	<b-form-textarea
-	:value="value"
-	@input="update($event.target.value)" />
+		:value="value"
+		@input="update($event.target.value)" />
 </template>
 
 <script>
