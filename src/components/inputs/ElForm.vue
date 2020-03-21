@@ -1,5 +1,5 @@
 <template>
-    <SchemaForm :schema="schema"  />
+	<schema-form :schema="schema" />
 </template>
 
 <script>
