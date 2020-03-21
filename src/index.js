@@ -12,7 +12,6 @@ import ElMarkdown from './components/ElMarkdown.vue';
 import ElTaskbar from './components/ElTaskbar.vue';
 
 import ElCodeInput from './components/inputs/ElCodeInput';
-import ElForm from './components/inputs/ElForm';
 import ElSelectInput from './components/inputs/ElSelectInput';
 import ElTextAreaInput from './components/inputs/ElTextAreaInput';
 import ElTextInput from './components/inputs/ElTextInput';
