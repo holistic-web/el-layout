@@ -1,5 +1,5 @@
 <template>
-	<b-form-textarea
+	<b-form-Textarea
 	:value="value"
 	@input="update($event.target.value)" />
 </template>
