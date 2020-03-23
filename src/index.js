@@ -43,9 +43,13 @@ export default function install($Vue) {
 
 export {
 	ElButton,
-	ElInputCode,
 	ElError,
+	ElForm,
 	ElHeader,
+	ElInputCode,
+	ElInputSelect,
+	ElInputText,
+	ElInputTextarea,
 	ElLayout,
 	ElMarkdown,
 	ElTaskbar
