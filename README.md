@@ -58,9 +58,6 @@ _Remember to increment the version number in package.json and package-lock.json.
 ## Notes and Caveats
 - This project uses [storybook](https://storybook.js.org/) to provide visual documentation. This storybook deployment is released automatically by the `.github/workflows/deploy-stories` action.
 
-- `npm install` will fail on this project unless the `/node_modules` folder is removed first. This is due to a bug in `formvuelatte` and a fix is in progress here:
-https://github.com/vuelidate/formvuelatte/pull/93
-
 ## Roadmap
 - upgrade to latest storybook
 - resolve "withNotes" is deprecated console error and markdown errors
