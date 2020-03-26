@@ -1,6 +1,8 @@
 <template>
 	<b-form-textarea
+		v-bind="$attrs"
 		:value="value"
+		:variant="variant"
 		@input="update($event.target.value)" />
 </template>
 
@@ -13,6 +15,10 @@ export default {
 		value: {
 			type: String,
 			required: true
+		},
+		variant: {
+			type: String,
+			default: 'outline-primary'
 		}
 	},
 	methods: {
