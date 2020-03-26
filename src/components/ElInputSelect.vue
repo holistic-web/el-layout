@@ -1,7 +1,9 @@
 <template>
 	<b-form-select
+	v-bind="$attrs"
 	v-model="selected"
-	:options="options" />
+	:options="options"
+	:variant="variant" />
 </template>
 
 <script>
@@ -18,6 +20,10 @@ export default {
 		options: {
 			type: Array,
 			required: true
+		},
+		variant: {
+			type: String,
+			default: 'outline-primary'
 		}
 	}
 };
