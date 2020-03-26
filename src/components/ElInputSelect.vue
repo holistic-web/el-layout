@@ -1,6 +1,6 @@
 <template>
 	<b-form-select
-	:value="value"
+	v-model="selected"
 	:options="options" />
 </template>
 
@@ -9,11 +9,12 @@ import { FormMixin } from 'formvuelatte';
 
 export default {
 	mixins: [FormMixin],
+	data() {
+		return {
+			selected: ''
+		};
+	},
 	props: {
-		value: {
-			type: String,
-			required: true
-		},
 		options: {
 			type: Array,
 			required: true
