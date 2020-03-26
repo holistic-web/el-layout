@@ -13,7 +13,7 @@ This component is powered by vue-codemirror.
 ## Events
 | **name** | **paylod** | **description**           |
 |----------|------------|---------------------------|
-| `input`  | `value`   | when the value is updated  |
+| `input`  | `value`    | when the value is updated |
 
 ## Example
 ```html
