@@ -2,7 +2,8 @@
 	<b-btn
 		class="ElButton"
 		:variant="variant"
-		v-bind="$attrs">
+		v-bind="$attrs"
+		@click="$emit('click', $event)">
 		<slot/>
 	</b-btn>
 </template>
